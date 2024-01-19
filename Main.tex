@@ -1,0 +1,365 @@
+%-------------------------
+% Resume in Latex
+% Author : Islam Ibrahim
+% Based off of: https://github.com/islamibr/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[backend=biber, style=numeric, labelnumber=false]{biblatex}
+\addbibresource{Publications.bib}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{amsmath}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\normalsize\bfseries
+}{}{0em}{}
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%------------------------
+\defbibenvironment{bibliography}
+  {\list%
+     {\printtext[labelnumberwidth]{%
+        \printfield{prefixnumber}%
+        \printfield{labelnumber}}}%
+     {\setlength{\labelwidth}{\labelnumberwidth}%
+      \setlength{\leftmargin}{\labelwidth}%
+      \setlength{\labelsep}{5pt}
+      \addtolength{\leftmargin}{\labelsep}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}}%
+      \renewcommand*{\makelabel}[1]{\smash{\raisebox{0.5ex}{\tiny\textbullet}}}}
+  {\endlist}
+  {\item}
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2}\vspace{-3pt} \\
+      \text{\footnotesize#3} & \text{\footnotesize #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-3pt} \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \text{\footnotesize#1} & \text{\small #2} \vspace{-3pt}\\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \Huge Islam Ibrahim Abdelal} \\ \vspace{1pt}
+    Alexandria, Egypt \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +20-120-460-9271 ~ \href{mailto:eslam.ibrahim2026@alexu.edu.eg}{\raisebox{-0.2\height}\faEnvelope\  \underline{es-eslam.ibrahim2026@alexu.edu.eg}} ~ 
+    \href{https://linkedin.com/in/islamibr29}{\raisebox{-0.2\height}\faLinkedin\ \underline{in/islamibr29}}  ~
+    \href{https://github.com/islamibr}{\raisebox{-0.2\height}\faGithub\ \underline{@islamibr}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\vspace{-10pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading 
+      {Alexandria University}{Sep. 2021 -- May 2026}
+      {BEng, Electrical Engineering, Electronics Major \,\,\,\ \textbf{CGPA:}  3.51}{Alexandria, Egypt}
+        \resumeItemListStart
+        \resumeItem{Key Courses: Circuits Analysis, Solid State Devices, Electronics I, Electronics II, C Programming}
+        \resumeItem{Key Skills: VHDL, Quartus, ModelSim, LabVIEW, \LaTeX, Python, C, Proteus, ElecNet, AutoCAD, Dialux, STK, PSpice, Multisim, TinkerCAD.}
+        \resumeItem{Key Projects: \href{https://github.com/islamibr/MIM_capacitor_and_magnetic_buzzer}{MIM Capacitor and Magnetic Buzzer}, \href{https://github.com/islamibr/serial_data_receiver}{Serial Data Receiver}, \href{https://github.com/islamibr/4-bit_up_counter_with_parallel_load}{4-bit Up Counter with Parallel Load}, \href{https://www.tinkercad.com/things/3uQqwDWqwkg-avometermultimeter}{AVOmeter/Multimeter}, \href{https://github.com/islamibr/k-map_calculator}{K-Map Calculator}, \href{https://github.com/islamibr/hex_keypad}{Hex Keypad}.}
+         
+      \resumeItemListEnd \vspace{-5pt}
+  \resumeSubHeadingListEnd
+
+\vspace{-10pt}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  \begin{comment}
+     \vspace{-5pt}
+    \subsection{Work Experience}
+    \vspace{-15pt}
+    \resumeSubheading
+      {Startup, Inc}{May 2019 -- August 2019}
+      {Front End Developer Intern}{City, State}
+      \resumeItemListStart
+        \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+        \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+        \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.} \end{comment}
+        \vspace{-3pt}
+    \subsection{Research Experience}
+    \vspace{-5pt}
+    \resumeSubheading
+      {Alexandria University}{Jun. 2023 -- Present}
+      {Undergraduate Research Assistant}{Alexandria, Egypt}
+      \resumeItemListStart
+        \resumeItem{Under Supervision of Dr. Ishac Kandas and Dr. Eman Elzahaby, Working on Applied Optics Especially Photonic Integrated Circuits (PICs) and Optical Neural Networks (ONNs).}
+        \resumeItem{Key Skills: Lumerical, COMSOL, MATLAB, Python, \LaTeX, EdrawMax, Illustrator, Visio, Blender, Paint 3D, Mendeley, \textsc{Bib}\TeX.}
+      \resumeItemListEnd
+      \begin{comment}
+     \vspace{-5pt}
+    \subsection{Training and Internships}
+    \vspace{-15pt}
+    \resumeSubheading
+      {Startup, Inc}{May 2019 -- August 2019}
+      {Front End Developer Intern}{City, State}
+      \resumeItemListStart
+        \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+        \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+        \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.} \end{comment}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------Publications-----------
+\section{Publications}
+    \nocite{*}
+        \resumeSubHeadingListStart
+         \bibliographystyle{IEEEtran}
+%        \subsection{Journal Articles} \vspace{-10pt}
+ %       \printbibliography[heading={none}, type=article] \vspace{-20pt}
+        % \subsection{Conference Proceedings} \vspace{-10pt}
+       % \printbibliography[heading={none},type=proceeding]
+       \vspace{-3pt} \subsection{Unpublished Articles} \vspace{-10pt}
+        \printbibliography[heading={none},type=unpublished]
+        \resumeSubHeadingListEnd
+
+\vspace{-25pt}
+%-----------PROJECTS-----------
+\section{Projects}
+         \subsection{Simulation} \vspace{-20pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://www.tinkercad.com/things/gVrKAFyUruq-smartplantcaresystemwithautowateringrefilling}{Smart Plant Care System}} $|$ \emph{Arduino, ThinkerCAD}}{Aug 2022} 
+           \resumeItem{I did the \textbf{Assessment} of automating care with soil sensors, buttons, and Arduino Uno for efficient watering control.} \vspace{-15pt}
+          \resumeProjectHeading 
+          {\textbf{\href{https://www.tinkercad.com/things/esnvsztXcxI-smartgreenhousemonitoringandcontrolsystem}{Smart Greenhouse System}} $|$ \emph{Arduino, ThinkerCAD, UART}}{Aug 2022}
+          \resumeItem{I did the \textbf{Assessment} of three subsystems: Sensing, Master and Action, Soil - Using Arduino Uno for seamless control.} 
+    \resumeSubHeadingListEnd \vspace{-15pt}
+    \subsection{Programming} \vspace{-20pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/islamibr/robot_rental_system}{Robot Rental System}} $|$ \emph{C++, OOP}}{Aug 2022}
+          \resumeItem{I did the \textbf{Assessment} of command-line app for managing robot rentals, user info, and seamless rental processes.}
+    \resumeSubHeadingListEnd \vspace{-15pt}
+    \subsection{HDLs (RTL)} \vspace{-20pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/islamibr/8x8_seq_mult}{8x8 Bit Sequential Multiplier}} $|$ \emph{Verilog, Vivado, QuestaSim}}{Aug 2023}
+          \resumeItem{I did the \textbf{Controller} Part of streamlined 8-bit operand multiplication, yielding a 16-bit product with multi-cycle computation.}
+    \resumeSubHeadingListEnd
+\vspace{-30pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{center}
+
+\renewcommand{\arraystretch}{-20}
+\begin{tabularx}{\textwidth}{p{0.33\textwidth}p{0.33\textwidth}p{0.33\textwidth}}
+    \textbf{Simulation and Modeling} & \textbf{Programming and Scripting} & \textbf{Description and Implementation} \\ \vspace{-10}
+    \small
+    \begin{itemize}[leftmargin=0, label={}, itemsep=0, parsep=0pt]
+        \item \textbf{Circuits}: \text{Virtuoso}
+        \item \textbf{Devices}: \text{TCAD}
+        \item \textbf{PCBs}: \text{Proteus, Allegro}
+        \item \textbf{ASICs}: \text{QuestaSim, ModelSim}
+    \end{itemize}
+    &
+    \small  \vspace{-10}
+    \begin{itemize}[leftmargin=0, label={}, itemsep=0, parsep=0pt]
+        \item \textbf{Programming}: \text{C/C++, MATLAB,} \newline \text{Python}
+        \item \textbf{Scripting}: \text{\LaTeX}
+    \end{itemize}
+    &
+    \small  \vspace{-10}
+    \begin{itemize}[leftmargin=0, label={}, itemsep=0, parsep=0pt]
+        \item \textbf{HDLs (RTL)}: \text{VHDL, Verilog}
+        \item \textbf{FPGAs}: \text{Quartus, Vivado}
+    \end{itemize}
+    \\
+\end{tabularx}
+\end{center}
+
+\vspace{-30pt}
+\section{Languages}
+English: B2, Arabic: Native
+
+\vspace{-10pt}
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+      {Education Clinic}{Aug. 2021 -- Sep. 2023}
+      {General Coordinator}{Remote}
+      \resumeItemListStart \vspace{-5pt}
+        \resumeItem{Successfully transitioned from Jr. Graphic Designer to General Coordinator within a year, strategically bypassing the Team Lead role, under the guidance of Dr. Ramzy Abdelaziz.} \vspace{-5pt}
+        \resumeItem{Boosted program completion rates by 20\% through effective management of educational initiatives for a non-profit organization impacting 100,000+ students. Also contributed to a 30\% surge in program participation rates.} \vspace{-5pt}
+        \resumeItem{Key skills: Strategic Management, General Management, Project Management, Agile Management, Marketing, Creative Suite, Canva, Visme, Figma,  Google Workspace, Office.}
+      \resumeItemListEnd \newpage
+    \resumeSubheading
+      {Hult Prize Egypt}{Sep. 2022 -- Jan. 2023}
+      {Corporate Relations Specialist}{Remote}
+      \resumeItemListStart \vspace{-5pt}
+        \resumeItem{Devised and executed effective corporate relations strategies, identifying and securing potential IEEE SAC and AIESEC partnerships and EG Bank sponsorship, resulting in a 50\% increase in overall partnerships and sponsorships.} \vspace{-5pt}
+        \resumeItem{Collaborated closely with the Hult Prize Egypt team and global network, ensuring seamless alignment with the organization's goals and objectives and contributing to the growth of a community of changemakers, resulting in a 3000 changemaker increase in community engagement and impact.} \vspace{-5pt}
+        \resumeItem{Key skills: Event Management, Crisis Management, Public Relations Campaigns, Strategic Partnerships, Sponsorships and Fundraising.}
+      \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+    \vspace{-25pt}
+\section{Achievements}
+\renewcommand{\arraystretch}{-20}
+\begin{tabularx}{\textwidth}{p{0.5\textwidth}p{0.5\textwidth}}
+    \textbf{Recognition and Accomplishments} & \textbf{Licenses and Certifications}  \\ \vspace{-10}
+    \small
+    \begin{itemize}[leftmargin=0, label={}, itemsep=0, parsep=0pt]
+        \item ICT Competition National Finalist by Huawei Academy
+        \item Young Egyptian Influencer by Magazine, 30.30
+        \item Global Nominee by NASA Space Apps Challenge
+        \item GSEC Top Achiever by Egyptian Ministry of Education
+    \end{itemize}
+    & \begin{comment}
+        
+    \end{comment}
+    \small  \vspace{-10}
+    \begin{itemize}[leftmargin=0, label={}, itemsep=0, parsep=0pt]
+        \item \textbf{EF SET} Score: 61-70/C1 · Mar 2021
+       %  \item MATLAB for Engineers by Couresera
+    \end{itemize}
+\end{tabularx}
+\vspace{-25pt}
+% \section{Miscellaneous}
+
+%\vspace{-10pt}
+\section{References}
+\begin{multicols}{2}
+  \textbf{Dr. Yasser Hassan} \vspace{-3pt}\\ 
+  Ex-fellow, Oxford University \vspace{-3pt}\\
+  Ass. Prof., Qatar University \vspace{-3pt}\\
+  Case: Education Clinic Founder \vspace{-3pt}\\
+  \faEnvelope \ \href{mailto:yhassan@qu.edu.qa}{yhassan@qu.edu.qa}
+
+  \columnbreak
+
+  \textbf{Dr. Ishac Kandas} \vspace{-3pt}\\
+  PhD, Virginia Tech \vspace{-3pt}\\
+  Ass. Prof., Alexandria University \vspace{-3pt}\\
+  Case: Research Supervisor \vspace{-3pt}\\
+  \faEnvelope \ \href{mailto:ishac@vt.edu}{ishac@vt.edu}
+
+\begin{comment}
+    \columnbreak
+
+  \textbf{Dr. X}\\
+  PhD, McMaster University\\
+  Ass. Professor, Alexandria University\\
+  Case: Graduation Project Supervisor\\
+  \faEnvelope \ \href{mailto:x@alexu.edu.eg}{x@alexu.edu.eg}
+  
+\end{comment}
+  
+\end{multicols}
+
+\end{document}
